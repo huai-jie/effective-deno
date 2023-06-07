@@ -14,7 +14,7 @@ import {
   assertStrictEquals,
   assertStringIncludes,
   assertThrows,
-} from "https://deno.land/std@0.190.0/testing/asserts.ts";
+} from "./deps.ts";
 
 /**
  * This module provides various assetion functions primarily for use in testing

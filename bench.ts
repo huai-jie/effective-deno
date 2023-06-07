@@ -1,4 +1,4 @@
-import { connect } from "https://deno.land/x/redis@v0.29.4/mod.ts";
+import { connect } from "./deps.ts";
 
 /**
  * $std/testing/bench.ts: (will be removed after 0.157.0) Use Deno.bench() instead. 

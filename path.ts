@@ -7,7 +7,7 @@ import {
   posix,
   resolve,
   win32,
-} from "https://deno.land/std@0.190.0/path/mod.ts";
+} from "./deps.ts";
 
 /**
  * This module provide functions for manipulating file paths.
