@@ -23,6 +23,7 @@ jobs:
           deno-version: "1.34.1"
 
       - name: Run fmt
+        if: ${{matrix.os}} !== 'windows-2022'
         run: |
           deno fmt --check
 
