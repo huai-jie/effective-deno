@@ -1,0 +1,7 @@
+{
+  "lock": false,
+  "tasks": {
+    "main": "deno run -A --watch main.ts",
+    "ok": "deno fmt --check && deno lint && deno check main.ts && deno test -A"
+  }
+}
