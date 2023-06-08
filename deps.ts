@@ -17,7 +17,7 @@ export {
   assertStrictEquals,
   assertStringIncludes,
   assertThrows,
-} from "std/testing/asserts.ts";
+} from "https://deno.land/std@0.190.0/testing/asserts.ts";
 export { connect } from "https://deno.land/x/redis@v0.29.4/mod.ts";
 export {
   basename,
@@ -28,4 +28,4 @@ export {
   posix,
   resolve,
   win32,
-} from "std/path/mod.ts";
+} from "https://deno.land/std@0.190.0/path/mod.ts";
