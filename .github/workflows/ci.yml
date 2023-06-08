@@ -23,11 +23,12 @@ jobs:
           deno-version: "1.34.1"
 
       - name: Run fmt
-        if: ${{matrix.os}} !== 'windows-2022'
+        if: startsWith(matrix.os, 'ubuntu')
         run: |
           deno fmt --check
 
       - name: Run lint
+        if: startsWith(matrix.os, 'ubuntu')
         run: |
           deno lint
 
