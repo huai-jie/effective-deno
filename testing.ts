@@ -13,8 +13,15 @@ import {
   assertRejects,
   assertStrictEquals,
   assertStringIncludes,
-  assertThrows,
+  // assertThrows,
 } from "./deps.ts";
+
+/**
+ * In order to let Deno recognize the import maps, 
+ * path to the `import_map.json` file is required to specified in the deno run command 
+ * `deno run -A --importmap import_map.json`
+ */
+import { assertThrows } from "std/testing/asserts.ts";
 
 /**
  * This module provides various assetion functions primarily for use in testing
@@ -30,6 +37,7 @@ const obj = { foo: "bar" };
  * asssert(expr, msg = "")
  */
 assert(true); // => "OK"
+// assert(false); // = "NG"
 
 /**
  * assertEquals(actual, expected, msg = "")
