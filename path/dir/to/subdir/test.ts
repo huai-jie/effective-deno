@@ -24,22 +24,20 @@ import { assert } from "../../../../deps.ts";
  * .test.js
  * .test.mjs
  * .test.jsx
- * 
+ *
  * specify permission
  * `deno test --allow-read --allow-write`
- * 
+ *
  * specify file
  * `deno test ./path/dir/to/subdir/test.ts`
  * multiple files
  * `deno test ./path/dir/to/subdir/test.ts ./sum_test.ts`
- * 
- * specific name 
+ *
+ * specific name
  * `deno test- filter ${regex}`
  * i.e `deno test --filter specific`
  */
 
 Deno.test("specific path file", () => {
   assert(true);
-})
-
-
+});

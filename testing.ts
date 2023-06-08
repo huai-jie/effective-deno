@@ -17,8 +17,8 @@ import {
 } from "./deps.ts";
 
 /**
- * In order to let Deno recognize the import maps, 
- * path to the `import_map.json` file is required to specified in the deno run command 
+ * In order to let Deno recognize the import maps,
+ * path to the `import_map.json` file is required to specified in the deno run command
  * `deno run -A --importmap import_map.json`
  */
 import { assertThrows } from "std/testing/asserts.ts";
