@@ -164,3 +164,11 @@ assertRejects(async () => assertEquals(1, 2)); // => "OK"
 //   "assertRejects(1,1)",
 // ); // => "NG"
 // assertRejects(async () => assertEquals(1, 2), TypeError, "Values are not equals", "assertRejects(TypeError)"); // => "NG"
+
+assertRejects(
+  async () => assertEquals(1, 2),
+  AssertionError,
+  "Values are not equals",
+  "assertRejects(TypeError)",
+); // => "OK"
+// Test code formatter
